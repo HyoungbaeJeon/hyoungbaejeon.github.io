@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko"
-title                    : "Site Title"
+title                    : "Stack Trace"
 title_separator          : "-"
 name                     : "Hyoungbae Jeon"
-description              : "An amazing website."
+description              : "development, test, debugging"
 url                      : "https://hyoungbaejeon.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -90,15 +90,15 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-116908787-1"
 
 
 # Site Author
 author:
   name             : "Hyoungbae Jeon"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Son, Husband, Dad, Developer"
   location         : "Seoul, Korea"
   email            : "hyoungbae.jeon@gmail.com"

@@ -1,3 +1,3 @@
-# [imhyoungbae.github.io](https://imhyoungbae.github.io)
+# [hyoungbaejeon.github.io](https://hyoungbaejeon.github.io)
 
 jekyll, minimal-mistakes, Hyoungbae Jeon Blog.
