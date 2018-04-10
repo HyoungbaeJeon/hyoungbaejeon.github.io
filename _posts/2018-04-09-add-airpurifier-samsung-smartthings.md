@@ -2,6 +2,7 @@
 layout: single
 title: Samsung SmartThings app에 공기청정기 추가하기
 date: 2018-04-09 11:32:00 +0900
+category: IoT
 tags:
   - Samsung SmartThings
   - 공기청정기

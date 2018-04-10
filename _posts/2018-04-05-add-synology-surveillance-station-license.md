@@ -2,6 +2,7 @@
 layout: single
 title: Synology Surveillance Station License 추가하기
 date: 2018-04-05 13:40:00 +0900
+category: IoT
 tags:
   - Synology
   - Surveillance Station

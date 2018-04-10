@@ -2,6 +2,7 @@
 layout: single
 title: Java10 Release Notes로 알아보는 신규 기능
 date: 2018-04-05 17:15:00 +0900
+category: development
 tags:
   - java 10
 ---

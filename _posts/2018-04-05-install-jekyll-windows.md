@@ -2,6 +2,7 @@
 layout: single
 title: windows에서 jekyll 설치하기
 date: 2018-04-05 00:20:00 +0900
+category: development
 tags:
   - jekyll
   - ruby

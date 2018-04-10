@@ -2,6 +2,7 @@
 layout: single
 title: jekyll, minimal-mistakes 적용하기
 date: 2018-04-04 20:19:00 +0900
+category: development
 tags:
   - jekyll
   - minimal-mistakes  
