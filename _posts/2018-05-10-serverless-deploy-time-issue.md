@@ -28,7 +28,7 @@ node_modules 전체를 exclude 시켰다.
 이를 다시 넣어줘야 했는데 아래 plugin으로 쉽게 해결하였다.  
 serverless-plugin-include-dependencies  
 
-[](https://github.com/dougmoscrop/serverless-plugin-include-dependencies)
+<https://github.com/dougmoscrop/serverless-plugin-include-dependencies>  
 
 ```yaml
 package:
