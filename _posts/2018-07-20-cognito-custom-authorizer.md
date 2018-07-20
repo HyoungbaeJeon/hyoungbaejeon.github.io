@@ -31,3 +31,4 @@ Cognito type의 authorizer는 accessToken의 인증을 제공해 주지 않고 �
 결국엔 lambda type의 Custom Authorizer를 만들게 되었다. 
 
 Custom Authorizer는 크게 4단계로 구분을 하였다. 
+
