@@ -32,3 +32,69 @@ Cognito type의 authorizer는 accessToken의 인증을 제공해 주지 않고 �
 
 Custom Authorizer는 크게 4단계로 구분을 하였다. 
 
+1단계: JWT 구조 확인
+
+```javascript
+var decodedJwt = jwt.decode(token, {complete: true})
+if (!decodedJwt) {
+  console.log('Not a valid JWT token')
+  context.fail('Unauthorized')
+  return
+}
+```
+
+2단계: JWT 서명 검증
+
+```javascript
+// Fail if token is not from your UserPool
+if (decodedJwt.payload.iss !== iss) {
+  console.log('invalid issuer')
+  context.fail('Unauthorized')
+  return
+}
+
+// Reject the jwt if it's not an 'Access Token'
+if (decodedJwt.payload.token_use !== 'access') {
+  console.log('Not an access token')
+  context.fail('Unauthorized')
+  return
+}
+
+// Get the kid from the token and retrieve corresponding PEM
+var kid = decodedJwt.header.kid
+var pem = pems[kid]
+if (!pem) {
+  console.log('Invalid access token')
+  context.fail('Unauthorized')
+  return
+}
+```
+
+3단계: 클레임 확인
+
+```javascript
+jwt.verify(token, pem, { issuer: iss }, function (err, payload) {
+  if(err) {
+    //error
+  } else {
+    //success
+  }
+})
+```
+
+4단계: Cognito Userpool 확인
+
+```javascript
+var cognitoAuthTokenParams = {
+  AccessToken: token
+}
+var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider()
+cognitoidentityserviceprovider.getUser(cognitoAuthTokenParams, function (err, data) {
+  if(err){
+    //error
+  } else {
+    //success
+  }
+})
+```
+
